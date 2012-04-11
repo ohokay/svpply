@@ -1,12 +1,12 @@
 # Svpply
 
-This is a ruby wrapper for the Svpply API. It's a work in progress.
+This is a ruby wrapper for the Svpply API. It's a work in progress, and currently not recommended for production usage.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'svpply'
+    gem 'svpply', '0.0.1.alpha'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install svpply
+    $ gem install svpply --pre
 
 ## Usage
 
