@@ -36,6 +36,12 @@ Single product lookup:
 
     $ Svpply.product(880581)
 
+Single product image permalink:
+
+    $ Svpply.product_image_permalink(880581, 'medium')  # 450x450px (default)
+    $ Svpply.product_image_permalink(880581, 'small')   # 195x195px
+    $ Svpply.product_image_permalink(880581, 'large')   # 625x625px
+
 
 ### Categories
 

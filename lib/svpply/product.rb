@@ -17,6 +17,10 @@ module Svpply
       new(Client.get_response("/products/#{id}.json")["product"])
     end
 
+    def self.product_image_permalink(id, type='medium')
+      "https://api.svpply.com/v1/products/#{id}/image?type=#{type}"
+    end
+
     def initialize(hash)
       @id = hash["id"]
       @title = hash["page_title"]
@@ -39,5 +43,6 @@ module Svpply
       @date_updated = hash["date_updated"]
       @svpply_url = "https://svpply.com/item/#{@id}"
     end
+
   end
 end
