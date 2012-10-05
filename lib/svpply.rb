@@ -28,4 +28,8 @@ module Svpply
     Store.find(id)
   end
 
+  def self.store_products(id, *attributes)
+    Store.products(id, attributes)
+  end
+
 end

@@ -66,6 +66,12 @@ Single store lookup:
 
     $ Svpply.store(880581)
 
+Store products lookup:
+
+$ Svpply.store_products(880581)
+$ Svpply.store_products(880581, limit: 10, offset: 2)
+$ Svpply.store_products(880581, genders: ['male'], prices: ['$1-20'])
+
 ## TODO:
 
 1. Tests

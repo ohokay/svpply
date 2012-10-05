@@ -9,6 +9,10 @@ module Svpply
       new(Client.get_response("/stores/#{id}.json")["store"])
     end
 
+    def self.products(id, attrs=nil)
+      ProductCollection.new(Client.get_response("/stores/#{id}/products.json", attrs)).products
+    end
+
     def initialize(hash)
       @id = hash["id"]
       @name = hash["name"]
