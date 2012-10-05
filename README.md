@@ -60,6 +60,11 @@ Categories have children categories:
 
 etc...
 
+### Stores
+
+Single store lookup:
+
+    $ Svpply.store(880581)
 
 ## TODO:
 

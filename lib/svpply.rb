@@ -5,6 +5,7 @@ require "svpply/product"
 require "svpply/product_collection"
 require "svpply/category"
 require "svpply/category_collection"
+require "svpply/store"
 
 module Svpply
   def self.products(*attributes)
@@ -21,6 +22,10 @@ module Svpply
 
   def self.categories
     Category.all
+  end
+
+  def self.store(id)
+    Store.find(id)
   end
 
 end
