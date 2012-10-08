@@ -83,6 +83,17 @@ Collection products lookup:
 $ Svpply.collection_products(2032)
 $ Svpply.collection_products(2032, limit: 10, offset: 2)
 
+### Users
+
+Single user lookup:
+
+    $ Svpply.user(4058)
+
+Collection products lookup:
+
+$ Svpply.user_products(4058)
+$ Svpply.user_products(4058, limit: 10, offset: 2)
+
 ## TODO:
 
 1. Tests
