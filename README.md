@@ -64,13 +64,24 @@ etc...
 
 Single store lookup:
 
-    $ Svpply.store(880581)
+    $ Svpply.store(48037)
 
 Store products lookup:
 
-$ Svpply.store_products(880581)
-$ Svpply.store_products(880581, limit: 10, offset: 2)
-$ Svpply.store_products(880581, genders: ['male'], prices: ['$1-20'])
+$ Svpply.store_products(48037)
+$ Svpply.store_products(48037, limit: 10, offset: 2)
+$ Svpply.store_products(48037, genders: ['male'], prices: ['$1-20'])
+
+### Collections
+
+Single collection lookup:
+
+    $ Svpply.collection(2032)
+
+Collection products lookup:
+
+$ Svpply.collection_products(2032)
+$ Svpply.collection_products(2032, limit: 10, offset: 2)
 
 ## TODO:
 
