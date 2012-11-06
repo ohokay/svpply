@@ -2,7 +2,7 @@ module Svpply
   class Collection
     attr_reader :id, :title, :masthead, :masthead_height, :masthead_width, :preview_type,
         :preview_image, :representative_item_id, :representative_item_width, :representative_item_height,
-        :products_count, :is_private, :is_wishlist, :date_created, :date_updated, :svpply_url
+        :products_count, :is_private, :is_wishlist, :date_created, :date_updated, :creator, :svpply_url
 
     def self.find(id)
       new(Client.get_response("/collections/#{id}.json")["collection"])
@@ -28,6 +28,8 @@ module Svpply
       @is_wishlist = hash["is_wishlist"]
       @date_created = hash["date_created"]
       @date_updated = hash["date_updated"]
+      @creator = hash["creator"]
+      @creator["portrait"] = @creator["avatar"].gsub("avatars", "portraits")
       @svpply_url = "https://svpply.com/collections/#{@id}"
     end
 
