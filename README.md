@@ -36,6 +36,12 @@ Single product lookup:
 
     $ Svpply.product(880581)
 
+Single product image permalink:
+
+    $ Svpply.product_image_permalink(880581, 'medium')  # 450x450px (default)
+    $ Svpply.product_image_permalink(880581, 'small')   # 195x195px
+    $ Svpply.product_image_permalink(880581, 'large')   # 625x625px
+
 
 ### Categories
 
@@ -54,6 +60,39 @@ Categories have children categories:
 
 etc...
 
+### Stores
+
+Single store lookup:
+
+    $ Svpply.store(48037)
+
+Store products lookup:
+
+$ Svpply.store_products(48037)
+$ Svpply.store_products(48037, limit: 10, offset: 2)
+$ Svpply.store_products(48037, genders: ['male'], prices: ['$1-20'])
+
+### Collections
+
+Single collection lookup:
+
+    $ Svpply.collection(2032)
+
+Collection products lookup:
+
+$ Svpply.collection_products(2032)
+$ Svpply.collection_products(2032, limit: 10, offset: 2)
+
+### Users
+
+Single user lookup:
+
+    $ Svpply.user(4058)
+
+Collection products lookup:
+
+$ Svpply.user_products(4058)
+$ Svpply.user_products(4058, limit: 10, offset: 2)
 
 ## TODO:
 
