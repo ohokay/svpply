@@ -6,7 +6,7 @@ This is a ruby wrapper for the Svpply API. It's a work in progress, and currentl
 
 Add this line to your application's Gemfile:
 
-    gem 'svpply', '0.0.1.alpha'
+    gem 'svpply', '0.0.1'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install svpply --pre
+    $ gem install svpply
 
 ## Usage
 
@@ -38,7 +38,7 @@ Single product lookup:
 
 Single product image permalink:
 
-    $ Svpply.product_image_permalink(880581, 'medium')  # 450x450px (default)
+	$ Svpply.product_image_permalink(880581, 'medium')  # 450x450px (default)
     $ Svpply.product_image_permalink(880581, 'small')   # 195x195px
     $ Svpply.product_image_permalink(880581, 'large')   # 625x625px
 
@@ -68,9 +68,9 @@ Single store lookup:
 
 Store products lookup:
 
-$ Svpply.store_products(48037)
-$ Svpply.store_products(48037, limit: 10, offset: 2)
-$ Svpply.store_products(48037, genders: ['male'], prices: ['$1-20'])
+	$ Svpply.store_products(48037)
+	$ Svpply.store_products(48037, limit: 10, offset: 2)
+	$ Svpply.store_products(48037, genders: ['male'], prices: ['$1-20'])
 
 ### Collections
 
@@ -80,8 +80,8 @@ Single collection lookup:
 
 Collection products lookup:
 
-$ Svpply.collection_products(2032)
-$ Svpply.collection_products(2032, limit: 10, offset: 2)
+	$ Svpply.collection_products(2032)
+	$ Svpply.collection_products(2032, limit: 10, offset: 2)
 
 ### Users
 
@@ -91,8 +91,8 @@ Single user lookup:
 
 Collection products lookup:
 
-$ Svpply.user_products(4058)
-$ Svpply.user_products(4058, limit: 10, offset: 2)
+	$ Svpply.user_products(4058)
+	$ Svpply.user_products(4058, limit: 10, offset: 2)
 
 ## TODO:
 
